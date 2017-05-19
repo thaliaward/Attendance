@@ -1,0 +1,41 @@
+/*
+*
+*
+*
+*/
+public class Classroom
+{
+	String className, teacherUsername, teacherPassword;
+	int period, startHour, startMin, endHour, endMin;
+	ArrayList<Student> enrolledStudents = new ArrayList<Student>(0);
+	
+	public Classroom()
+	{
+		className = "Class Name";
+		teacherUsername = "Teacher Username";
+		teacherPassword = "Teacher Password";
+		int period = 0;
+		int startHour = 0;
+		int startMin = 0;
+		int endHour = 0;
+		int endMin = 0;
+	}
+	public Classroom(String cName, String tUName, String tPWord, int per, int sHour, int sMin, int eHour, int eMin)
+	{
+		className = cName;
+		teacherUsername = tUName;
+		teacherPassword = tPWord;
+		period = per;
+		startHour = sHour;
+		startMin = sMin;
+		endHour = eHour;
+		endMin = eMin;
+		fillEnrolledStudents();
+	}
+	
+	public fillEnrolledStudents()
+	{
+	
+	}
+	public set
+}
