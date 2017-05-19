@@ -1,0 +1,54 @@
+/*
+*
+*
+*
+*/
+public class Student
+{
+	String firstName, lastName, username, password
+	//Photo folder of student's headshots????
+	
+	public Student()
+	{
+		firstName = "First Name";
+		lastName = "Last Name";
+		username = "username";
+		password = "password";
+	}
+	public Student(String fName, String lName)
+	{
+		firstName = fName;
+		lastName = lName;
+	}
+	public Student(String fName, String lName, String uName, String pWord)
+	{
+		firstName = fName;
+		lastName = lName;
+		username = uName;
+		password = pWord;
+	}
+	
+	public setPassword(String firstPassword, String newPassword)
+	{
+		if (firstPassword.equals(password))
+		{
+			password = newPassword;
+		}
+		else
+		{
+			System.out.println("Incorrect password. You can not change it. Please try again.");
+		}
+	}
+	public setFirstName(String newFName)
+	{
+		firstName = newFName;
+	}
+	public setLastName(String newLName)
+	{
+		lastName = newLName;
+	}
+	public setUsername(String newUName)
+	{
+		username = newUName;
+	}
+}
