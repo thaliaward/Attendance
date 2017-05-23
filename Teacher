@@ -1,0 +1,43 @@
+/*
+*
+*
+*
+*/
+public Class Teacher
+{
+	String login, password, name;
+	ArrayList<Classroom> rooms = new ArrayList<Classroom>(0);
+	
+	public Teacher()
+	{
+		login = "Login";
+		password = "Password";
+		name = "Name";
+		fillRooms();
+	}
+	public Teacher(String log, String pWord, String teachName)
+	{
+		login = log;
+		password = pWord;
+		name = teachName;
+		fillRooms();
+	}
+	
+	public fillRooms()
+	{
+		
+	}
+	
+	public setLogin(String log)
+	{
+		login = log;
+	}
+	public setPassword(String pWord)
+	{
+		password = pWord;
+	}
+	public setName(String teacherName)
+	{
+		name = teacherName;
+	}
+}
