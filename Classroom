@@ -1,3 +1,4 @@
+import java.util.Scanner;
 /*
 *
 *
@@ -8,6 +9,7 @@ public class Classroom
 	String className, teacherUsername, teacherPassword;
 	int period, startHour, startMin, endHour, endMin;
 	ArrayList<Student> enrolledStudents = new ArrayList<Student>(0);
+	Scanner scan = new Scanner(System.in);
 	
 	public Classroom()
 	{
@@ -35,7 +37,38 @@ public class Classroom
 	
 	public fillEnrolledStudents()
 	{
-	
+		
 	}
-	public set
+	public setClassName(String cN)
+	{
+		className = cN;
+	}
+	public setTeacherUsername(String tU)
+	{
+		teacherUsername = tU;
+	}
+	public setTeacherPassword(String tP)
+	{
+		teacherPassword = tP;
+	}
+	public setPeriod(int per)
+	{
+		period = per;
+	}
+	public setStartHour(int sH)
+	{
+		startHour = sH;
+	}
+	public setStartMin(int sM)
+	{
+		startMin = sM;
+	}
+	public setEndHour(int eH)
+	{
+		endHour = eH;
+	}
+	public setEndMin(int eM)
+	{
+		endMin = eM;
+	}
 }
