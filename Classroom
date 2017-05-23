@@ -6,7 +6,7 @@ import java.util.Scanner;
 */
 public class Classroom
 {
-	String className, teacherUsername, teacherPassword;
+	String className, classCode;
 	int period, startHour, startMin, endHour, endMin;
 	ArrayList<Student> enrolledStudents = new ArrayList<Student>(0);
 	Scanner scan = new Scanner(System.in);
@@ -14,19 +14,17 @@ public class Classroom
 	public Classroom()
 	{
 		className = "Class Name";
-		teacherUsername = "Teacher Username";
-		teacherPassword = "Teacher Password";
+		classCode = "Class Code";
 		int period = 0;
 		int startHour = 0;
 		int startMin = 0;
 		int endHour = 0;
 		int endMin = 0;
 	}
-	public Classroom(String cName, String tUName, String tPWord, int per, int sHour, int sMin, int eHour, int eMin)
+	public Classroom(String cName, String cCode, int per, int sHour, int sMin, int eHour, int eMin)
 	{
 		className = cName;
-		teacherUsername = tUName;
-		teacherPassword = tPWord;
+		classCode = cCode;
 		period = per;
 		startHour = sHour;
 		startMin = sMin;
@@ -43,13 +41,9 @@ public class Classroom
 	{
 		className = cN;
 	}
-	public setTeacherUsername(String tU)
+	public setClassCode(String cC)
 	{
-		teacherUsername = tU;
-	}
-	public setTeacherPassword(String tP)
-	{
-		teacherPassword = tP;
+		classCode = cC;
 	}
 	public setPeriod(int per)
 	{
