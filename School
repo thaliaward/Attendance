@@ -1,77 +1,78 @@
+import java.util.*;
 /*
 *
 *
 *
 *
 */
-public Class School
+public class School
 {
-	ArrayList<Student> allStudents = new ArrayList<Student>(0);
-	ArrayList<Classroom> allClasses = new ArrayList<Classroom>(0);
-	ArrayList<String> adminLogins = new ArrayList<String>(0);
-	ArrayList<String> adminPasswords = new ArrayList<String>(0);
-	int classesPerDay;
-	
-	public School()
-	{
-		classesPerDay = 0;
-		fillAllStudents();
-		fillAllClasses();
-	}
-	public School(int cPD, String firstLogin, String firstPassword)
-	{
-		classesPerDay = cPD;
-		adminLogins.add(firstLogin);
-		adminPasswords.add(firstPassword);
-	}
-	
-	public void setClassesPerDay(int cPDay)
-	{
-		classesPerDay = cPDay;
-	}
-	public void fillAllStudents()
-	{
-		
-	}
-	public void fillAllClasses()
-	{
-		
-	}
-	public void createNewAdmin(String accessLogin, String accessPassword, String newLogin, String newPassword)
-	{
-		if (checkLoginAndPassword(accessLogin, accessPassword))
-		{
-			adminLogins.add(newLogin);
-			adminPasswords.add(newPassword);
-		}
-		else
-		{
-			System.out.println("Incorrect login or password");
-		}
-	}
-	public boolean checkLoginAndPassword(String thisLog, String thisPass)
-	{
-		int iterator = 0;
-		int index = -1;
-		for (adminLogins : log)
-		{
-			if (log.equals(thisLog))
-			{
-				index = iterator;
-			}
-			iterator++;
-		}
-		if (index = -1)
-		{
-			return false;
-		}
-		if (thisPass.equals(adminPasswords.get(index)))
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
-	}
+    ArrayList<Student> allStudents = new ArrayList<Student>(0);
+    ArrayList<Classroom> allClasses = new ArrayList<Classroom>(0);
+    ArrayList<String> adminLogins = new ArrayList<String>(0);
+    ArrayList<String> adminPasswords = new ArrayList<String>(0);
+    int classesPerDay;
+    
+    public School()
+    {
+        classesPerDay = 0;
+        fillAllStudents();
+        fillAllClasses();
+    }
+    public School(int cPD, String firstLogin, String firstPassword)
+    {
+        classesPerDay = cPD;
+        adminLogins.add(firstLogin);
+        adminPasswords.add(firstPassword);
+    }
+    
+    public void setClassesPerDay(int cPDay)
+    {
+        classesPerDay = cPDay;
+    }
+    public void fillAllStudents()
+    {
+        
+    }
+    public void fillAllClasses()
+    {
+        
+    }
+    public void createNewAdmin(String accessLogin, String accessPassword, String newLogin, String newPassword)
+    {
+        if (checkLoginAndPassword(accessLogin, accessPassword))
+        {
+            adminLogins.add(newLogin);
+            adminPasswords.add(newPassword);
+        }
+        else
+        {
+            System.out.println("Incorrect login or password");
+        }
+    }
+    public boolean checkLoginAndPassword(String thisLog, String thisPass)
+    {
+        int iterator = 0;
+        int index = -1;
+        for (String log : adminLogins)
+        {
+            if (log.equals(thisLog))
+            {
+                index = iterator;
+            }
+            iterator++;
+        }
+        if (index == -1)
+        {
+            return false;
+        }
+        if (thisPass.equals(adminPasswords.get(index)))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
