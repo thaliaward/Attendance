@@ -1,9 +1,10 @@
+import java.util.*;
 /*
 *
 *
 *
 */
-public Class Teacher
+public class Teacher
 {
 	String login, password, name;
 	ArrayList<Classroom> rooms = new ArrayList<Classroom>(0);
@@ -23,20 +24,20 @@ public Class Teacher
 		fillRooms();
 	}
 	
-	public fillRooms()
+	public void fillRooms()
 	{
 		
 	}
 	
-	public setLogin(String log)
+	public void setLogin(String log)
 	{
 		login = log;
 	}
-	public setPassword(String pWord)
+	public void setPassword(String pWord)
 	{
 		password = pWord;
 	}
-	public setName(String teacherName)
+	public void setName(String teacherName)
 	{
 		name = teacherName;
 	}
