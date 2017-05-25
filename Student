@@ -5,7 +5,7 @@
 */
 public class Student
 {
-	String firstName, lastName, username, password
+	String firstName, lastName, username, password;
 	//Photo folder of student's headshots????
 	
 	public Student()
@@ -28,7 +28,7 @@ public class Student
 		password = pWord;
 	}
 	
-	public setPassword(String firstPassword, String newPassword)
+	public void setPassword(String firstPassword, String newPassword)
 	{
 		if (firstPassword.equals(password))
 		{
@@ -39,15 +39,15 @@ public class Student
 			System.out.println("Incorrect password. You can not change it. Please try again.");
 		}
 	}
-	public setFirstName(String newFName)
+	public void setFirstName(String newFName)
 	{
 		firstName = newFName;
 	}
-	public setLastName(String newLName)
+	public void setLastName(String newLName)
 	{
 		lastName = newLName;
 	}
-	public setUsername(String newUName)
+	public void setUsername(String newUName)
 	{
 		username = newUName;
 	}
