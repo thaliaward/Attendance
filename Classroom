@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 /*
 *
 *
@@ -33,35 +33,35 @@ public class Classroom
 		fillEnrolledStudents();
 	}
 	
-	public fillEnrolledStudents()
+	public void fillEnrolledStudents()
 	{
 		
 	}
-	public setClassName(String cN)
+	public void setClassName(String cN)
 	{
 		className = cN;
 	}
-	public setClassCode(String cC)
+	public void setClassCode(String cC)
 	{
 		classCode = cC;
 	}
-	public setPeriod(int per)
+	public void setPeriod(int per)
 	{
 		period = per;
 	}
-	public setStartHour(int sH)
+	public void setStartHour(int sH)
 	{
 		startHour = sH;
 	}
-	public setStartMin(int sM)
+	public void setStartMin(int sM)
 	{
 		startMin = sM;
 	}
-	public setEndHour(int eH)
+	public void setEndHour(int eH)
 	{
 		endHour = eH;
 	}
-	public setEndMin(int eM)
+	public void setEndMin(int eM)
 	{
 		endMin = eM;
 	}
